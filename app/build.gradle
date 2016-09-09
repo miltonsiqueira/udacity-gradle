@@ -30,4 +30,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:8.4.0'
     compile project(':jokelib')
     compile project(':jokedisplay')
+    compile project(path: ':backend', configuration: 'android-endpoints')
 }
