@@ -5,6 +5,7 @@ import android.test.AndroidTestCase;
 import com.titomilton.jokelib.JokeUtils;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 public class EndpointsJokeAsyncTaskAndroidTest extends AndroidTestCase{
 
@@ -21,7 +22,7 @@ public class EndpointsJokeAsyncTaskAndroidTest extends AndroidTestCase{
             }
         }.execute();
 
-        signal.await();
+        signal.await(10, TimeUnit.SECONDS);
 
         assertEquals(new JokeUtils().getJoke(), joke[0]);
     }
