@@ -9,6 +9,6 @@
                 tools:context=".MainActivityFragment">
 
     <include
-        layout="@layout/text_button_joke"/>
+        layout="@layout/views_main_activity"/>
 
 </RelativeLayout>

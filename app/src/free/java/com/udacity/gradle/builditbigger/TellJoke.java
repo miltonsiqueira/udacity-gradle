@@ -1,6 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
+import android.widget.ProgressBar;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -9,8 +10,8 @@ import com.google.android.gms.ads.InterstitialAd;
 public class TellJoke extends TellJokeBase {
     private final InterstitialAd mInterstitialAd;
 
-    public TellJoke(Context context) {
-        super(context);
+    public TellJoke(Context context, ProgressBar progressBar) {
+        super(context, progressBar);
 
         mInterstitialAd = new InterstitialAd(context);
         mInterstitialAd.setAdUnitId(context.getString(R.string.interstitial_ad_unit_id));
