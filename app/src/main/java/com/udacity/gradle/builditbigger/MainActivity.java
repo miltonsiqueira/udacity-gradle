@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ProgressBar;
 
 
+
+
 public class MainActivity extends ActionBarActivity {
     private TellJoke tellJoke;
     private ProgressBar spinner;
@@ -44,17 +46,9 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void tellJoke(View view){
-//        final Context context = this;
-//
-//        new EndpointsJokeAsyncTask(){
-//            @Override
-//            protected void onPostExecute(String result) {
-//                Intent intent = new Intent(context, JokeDisplay.class);
-//                intent.putExtra("joke", result);
-//                context.startActivity(intent);
-//            }
-//        }.execute();
+
         tellJoke.tellJoke();
+
     }
 
 
